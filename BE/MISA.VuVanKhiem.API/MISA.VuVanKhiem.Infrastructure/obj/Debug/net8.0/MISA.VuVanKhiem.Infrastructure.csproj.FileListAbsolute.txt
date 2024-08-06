@@ -1,0 +1,16 @@
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.csproj.AssemblyReference.cache
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.AssemblyInfoInputs.cache
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.AssemblyInfo.cs
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.csproj.CoreCompileInputs.cache
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.sourcelink.json
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\bin\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.deps.json
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\bin\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.dll
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\bin\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.pdb
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\bin\Debug\net8.0\MISA.VuVanKhiem.Core.dll
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\bin\Debug\net8.0\MISA.VuVanKhiem.Core.pdb
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\MISA.VuV.B314244E.Up2Date
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.dll
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\refint\MISA.VuVanKhiem.Infrastructure.dll
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\MISA.VuVanKhiem.Infrastructure.pdb
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Infrastructure\obj\Debug\net8.0\ref\MISA.VuVanKhiem.Infrastructure.dll

@@ -1,0 +1,344 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{179BB2DD-5280-43F1-8376-D4910BD6E718}|MISA.VuVanKhiem.Infrastructure\\MISA.VuVanKhiem.Infrastructure.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.infrastructure\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{179BB2DD-5280-43F1-8376-D4910BD6E718}|MISA.VuVanKhiem.Infrastructure\\MISA.VuVanKhiem.Infrastructure.csproj|solutionrelative:misa.vuvankhiem.infrastructure\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784F0227-83C3-4DB5-81C0-E5FCF6BC9A6E}|MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{784F0227-83C3-4DB5-81C0-E5FCF6BC9A6E}|MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API.csproj|solutionrelative:misa.vuvankhiem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\entities\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\entities\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\interfaces\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\interfaces\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\interfaces\\ideparturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\interfaces\\ideparturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\interfaces\\ipositionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\interfaces\\ipositionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\interfaces\\ipositionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\interfaces\\ipositionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784F0227-83C3-4DB5-81C0-E5FCF6BC9A6E}|MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{784F0227-83C3-4DB5-81C0-E5FCF6BC9A6E}|MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API.csproj|solutionrelative:misa.vuvankhiem.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{179BB2DD-5280-43F1-8376-D4910BD6E718}|MISA.VuVanKhiem.Infrastructure\\MISA.VuVanKhiem.Infrastructure.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.infrastructure\\repository\\positionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{179BB2DD-5280-43F1-8376-D4910BD6E718}|MISA.VuVanKhiem.Infrastructure\\MISA.VuVanKhiem.Infrastructure.csproj|solutionrelative:misa.vuvankhiem.infrastructure\\repository\\positionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784F0227-83C3-4DB5-81C0-E5FCF6BC9A6E}|MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{784F0227-83C3-4DB5-81C0-E5FCF6BC9A6E}|MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API.csproj|solutionrelative:misa.vuvankhiem.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.core\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB78C8B-4724-4F3D-9562-968D4A9ED625}|MISA.VuVanKhiem.Core\\MISA.VuVanKhiem.Core.csproj|solutionrelative:misa.vuvankhiem.core\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{179BB2DD-5280-43F1-8376-D4910BD6E718}|MISA.VuVanKhiem.Infrastructure\\MISA.VuVanKhiem.Infrastructure.csproj|d:\\git\\misa\\be\\misa.vuvankhiem.api\\misa.vuvankhiem.infrastructure\\misa.vuvankhiem.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{179BB2DD-5280-43F1-8376-D4910BD6E718}|MISA.VuVanKhiem.Infrastructure\\MISA.VuVanKhiem.Infrastructure.csproj|solutionrelative:misa.vuvankhiem.infrastructure\\misa.vuvankhiem.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Entities\\Employee.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Employee.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Entities\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T14:52:00.913Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Interfaces\\IBaseRepository.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IBaseRepository.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IBaseRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAkwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T16:05:43.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Position.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Position.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Entities\\Position.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Position.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Entities\\Position.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T15:06:37.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\Program.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.API\\Program.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\Program.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.API\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:21:35.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Services\\EmployeeService.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Services\\EmployeeService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:47:25.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T15:13:09.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAqwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T16:29:17.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBaseService.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IBaseService.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Interfaces\\IBaseService.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IBaseService.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IBaseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T16:20:30.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDepartmentService.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IDepartmentService.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Interfaces\\IDepartmentService.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IDepartmentService.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IDepartmentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T16:25:06.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IDepartureRepository.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IDepartureRepository.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Interfaces\\IDepartureRepository.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IDepartureRepository.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IDepartureRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T15:13:44.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T16:14:38.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPositionRepository.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IPositionRepository.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Interfaces\\IPositionRepository.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IPositionRepository.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IPositionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T15:13:25.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IPositionService.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IPositionService.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Interfaces\\IPositionService.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Interfaces\\IPositionService.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IPositionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T16:25:50.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.API\\WeatherForecast.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\WeatherForecast.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.API\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T07:02:30.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.API\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.API\\Controllers\\EmployeesController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:04:43.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Entities\\Department.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Department.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Entities\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T16:24:03.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PositionRepository.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Infrastructure\\Repository\\PositionRepository.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Infrastructure\\Repository\\PositionRepository.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Infrastructure\\Repository\\PositionRepository.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Infrastructure\\Repository\\PositionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T03:52:53.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Common.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Common.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Common.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Common.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Common.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T03:55:01.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MISA.VuVanKhiem.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Infrastructure\\MISA.VuVanKhiem.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Infrastructure\\MISA.VuVanKhiem.Infrastructure.csproj",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Infrastructure\\MISA.VuVanKhiem.Infrastructure.csproj",
+              "RelativeToolTip": "MISA.VuVanKhiem.Infrastructure\\MISA.VuVanKhiem.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-05T16:27:50.7Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

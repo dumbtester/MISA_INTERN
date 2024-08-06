@@ -1,0 +1,13 @@
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\obj\Debug\net8.0\MISA.VuVanKhiem.Core.csproj.AssemblyReference.cache
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\obj\Debug\net8.0\MISA.VuVanKhiem.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\obj\Debug\net8.0\MISA.VuVanKhiem.Core.AssemblyInfoInputs.cache
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\obj\Debug\net8.0\MISA.VuVanKhiem.Core.AssemblyInfo.cs
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\obj\Debug\net8.0\MISA.VuVanKhiem.Core.csproj.CoreCompileInputs.cache
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\obj\Debug\net8.0\MISA.VuVanKhiem.Core.sourcelink.json
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\bin\Debug\net8.0\MISA.VuVanKhiem.Core.deps.json
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\bin\Debug\net8.0\MISA.VuVanKhiem.Core.dll
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\bin\Debug\net8.0\MISA.VuVanKhiem.Core.pdb
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\obj\Debug\net8.0\MISA.VuVanKhiem.Core.dll
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\obj\Debug\net8.0\refint\MISA.VuVanKhiem.Core.dll
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\obj\Debug\net8.0\MISA.VuVanKhiem.Core.pdb
+D:\GIT\MISA\BE\MISA.VuVanKhiem.API\MISA.VuVanKhiem.Core\obj\Debug\net8.0\ref\MISA.VuVanKhiem.Core.dll

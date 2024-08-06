@@ -1,0 +1,6 @@
+@MISA.VuVanKhiem.API_HostAddress = http://localhost:5279
+
+GET {{MISA.VuVanKhiem.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
