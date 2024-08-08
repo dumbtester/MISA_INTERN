@@ -111,47 +111,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-05T14:52:00.913Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Department.cs",
-              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Department.cs",
-              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Entities\\Department.cs",
-              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Department.cs",
-              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Entities\\Department.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAmwAoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T03:15:44.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Position.cs",
-              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Position.cs",
-              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Entities\\Position.cs",
-              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Position.cs",
-              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Entities\\Position.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T03:15:39.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DepartmentsController.cs",
-              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\Controllers\\DepartmentsController.cs",
-              "RelativeDocumentMoniker": "MISA.VuVanKhiem.API\\Controllers\\DepartmentsController.cs",
-              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\Controllers\\DepartmentsController.cs",
-              "RelativeToolTip": "MISA.VuVanKhiem.API\\Controllers\\DepartmentsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T03:04:59.805Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -163,6 +123,42 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Entities\\Department.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Department.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Entities\\Department.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAmwAoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T03:15:44.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Position.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Position.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.Core\\Entities\\Position.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Core\\Entities\\Position.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.Core\\Entities\\Position.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T03:15:39.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "MISA.VuVanKhiem.API\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "MISA.VuVanKhiem.API\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T03:04:59.805Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "PositionRepository.cs",
               "DocumentMoniker": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.Infrastructure\\Repository\\PositionRepository.cs",
@@ -171,8 +167,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Infrastructure\\Repository\\PositionRepository.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAACgAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T03:52:53.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T03:52:53.305Z"
             },
             {
               "$type": "Document",
@@ -184,8 +179,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.API\\Controllers\\PositionsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T03:04:44.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T03:04:44.742Z"
             },
             {
               "$type": "Document",
@@ -195,7 +189,7 @@
               "RelativeDocumentMoniker": "MISA.VuVanKhiem.API\\Program.cs",
               "ToolTip": "D:\\GIT\\MISA\\BE\\MISA.VuVanKhiem.API\\MISA.VuVanKhiem.API\\Program.cs",
               "RelativeToolTip": "MISA.VuVanKhiem.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAhAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T02:21:35.863Z",
               "EditorCaption": ""
@@ -210,8 +204,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Infrastructure\\Repository\\DepartmentRepository.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAuwA4AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T01:28:58.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T01:28:58.041Z"
             },
             {
               "$type": "Document",
@@ -223,8 +216,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Infrastructure\\Repository\\EmployeeRepository.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAgwDQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T16:29:17.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T16:29:17.502Z"
             },
             {
               "$type": "Document",
@@ -236,8 +228,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IEmployeeRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T15:13:09.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T15:13:09.627Z"
             },
             {
               "$type": "Document",
@@ -262,8 +253,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Core\\Services\\EmployeeService.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAxwBAAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T01:47:25.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T01:47:25.065Z"
             },
             {
               "$type": "Document",
@@ -275,8 +265,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IBaseService.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAADgvw0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T16:20:30.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T16:20:30.746Z"
             },
             {
               "$type": "Document",
@@ -288,8 +277,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Infrastructure\\Repository\\BaseRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T01:29:27.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T01:29:27.69Z"
             },
             {
               "$type": "Document",
@@ -301,8 +289,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Core\\Services\\BaseService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T01:37:34.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T01:37:34.62Z"
             },
             {
               "$type": "Document",
@@ -314,8 +301,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.API\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-08T01:43:35.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T01:43:35.701Z"
             },
             {
               "$type": "Document",
@@ -327,8 +313,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Infrastructure\\MysqlConnect\\MysqlDBContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T01:30:57.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T01:30:57.566Z"
             },
             {
               "$type": "Document",
@@ -340,8 +325,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IPositionRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T15:13:25.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T15:13:25.669Z"
             },
             {
               "$type": "Document",
@@ -353,8 +337,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IPositionService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T16:25:50.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T16:25:50.628Z"
             },
             {
               "$type": "Document",
@@ -366,8 +349,7 @@
               "RelativeToolTip": "MISA.VuVanKhiem.Core\\Interfaces\\IDepartureRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T15:13:44.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T15:13:44.155Z"
             },
             {
               "$type": "Document",

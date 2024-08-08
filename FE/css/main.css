@@ -101,18 +101,6 @@ td {
   border-radius: 4px;
 }
 
-.search-icon {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background-image: url('public/icon/search.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
 
 .icon {
   width: 20px;
@@ -122,24 +110,15 @@ td {
 
 .employee-table {
   margin-top: 20px;
-  max-height: 500px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  
+  width: 100%;
+  overflow-x: auto;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #ccc;
-  /* Thêm viền cho toàn bộ bảng */
-  overflow-y: auto;
-  /* Thêm để có thanh cuộn dọc */
-  display: block;
-  /* Thêm để làm cho bảng có thể cuộn được */
-  max-height: 400px;
-  /* Giới hạn chiều cao của bảng để hiển thị thanh cuộn */
-  table-layout: fixed;
+  min-width: 600px; /* Đảm bảo bảng không bị thu nhỏ quá mức */
 }
 
 th,
@@ -148,24 +127,33 @@ td {
   text-align: left;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  /* Thêm viền phải cho mỗi ô */
+  white-space: nowrap; /* Ngăn text xuống dòng */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Hiển thị dấu ... khi text quá dài */
 }
 
 th:last-child,
 td:last-child {
   border-right: none;
-  /* Loại bỏ viền phải cho cột cuối cùng */
 }
 
 th {
   background-color: #f9f9f9;
   position: sticky;
   top: 0;
-  /* Để cố định các tiêu đề cột ở đầu bảng */
   z-index: 1;
-  /* Để các tiêu đề cột luôn ở trên các hàng */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Thêm bóng đổ để tạo hiệu ứng phân cách */
+}
+
+.body_container {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: auto; /* Thay đổi từ height: 500px thành auto */
+  max-height: 500px; /* Thêm max-height để giới hạn chiều cao tối đa */
+  overflow-y: auto; /* Cho phép cuộn dọc nếu nội dung vượt quá max-height */
 }
 
 td img.icon1 {

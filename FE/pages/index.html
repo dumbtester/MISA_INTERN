@@ -141,7 +141,7 @@
             <div class="modal" id="employeeModal" style="display: none;">
                 <div class="modal-content">
                     <h2 id="modalTitle">Thêm nhân viên mới</h2>
-                    <form id="employeeForm" onsubmit="handleSubmit(event)">
+                    <form id="employeeForm" >
                         <div class="container_form">
                             <div class="row_1">
                                 <div class="info_1">
@@ -196,8 +196,8 @@
                                     </div>
                                     <div class="id_date">
                                         <div class="id">
-                                            <label for="employeeId">Số CMND</label>
-                                            <input id="employeeId" name="identityNumber" type="text">
+                                            <label for="identityNumber">Số CMND</label>
+                                            <input id="identityNumber" name="identityNumber" type="text">
                                         </div>
                                         <div class="date">
                                             <label for="employeeIdDate">Ngày cấp</label>
@@ -249,7 +249,7 @@
                             </div>
                             <div class="buttons">
                                 <button type="button" onclick="closeModal()">Hủy</button>
-                                <button type="submit">Thêm mới</button>
+                                <button type="submit" id="button-add-emp">Thêm mới</button>
                             </div>
                     </form>
                 </div>

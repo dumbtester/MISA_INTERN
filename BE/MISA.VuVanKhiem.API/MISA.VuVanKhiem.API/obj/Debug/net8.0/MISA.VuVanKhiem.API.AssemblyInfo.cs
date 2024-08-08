@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MISA.VuVanKhiem.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5af17749432077f9b34988141eb6061103aa46c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6af817d6a6b5c8695bf91d9143cd62e4d3ee2ad5")]
 [assembly: System.Reflection.AssemblyProductAttribute("MISA.VuVanKhiem.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MISA.VuVanKhiem.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

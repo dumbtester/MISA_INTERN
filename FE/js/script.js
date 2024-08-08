@@ -70,7 +70,7 @@ function renderTable() {
                         <td style="position: relative;">
                             ${item.address ?? ""}
                             <div>
-                                <button data-id="${item.employeeId}" class="button-edit"><img src="../assets/icon/close-48.png" alt=""></button>
+                                <button data-id="${item.employeeId}" class="button-edit"><img src="../assets/icon/option.png" alt=""></button>
                                 <button data-id="${item.employeeId}" class="button-delete"><img src="../assets/icon/delete-48.png" alt=""></button>
                             </div>
                         </td>`;
@@ -151,41 +151,39 @@ function addDeleteButtonEvents() {
 }
 
 function loadOpenEmployee() {
-    try{
+    try {
         resetForm();
         console.log("oaiwjfoiwjgoijrg")
-        debugger;
         if (currentEditId === "0") {
             const requestOptions = {
                 method: "GET",
                 redirect: "follow"
             };
-    
+
             fetch("https://localhost:7192/api/v1/Employees/CreteEmp/NewCode", requestOptions)
                 .then((response) => response.text())
                 .then((result) => {
-                    debugger;
                     openModal();
                     document.getElementById("employeeCode").value = result;
-    
+
                 })
                 .catch((error) => console.error(error));
-        } else{
+        } else {
 
         }
-    } catch(error){
+    } catch (error) {
         console.error(error);
     }
 }
 
-function getPositios(){
-    try{
+function getPositios() {
+    try {
         const requestOptions = {
             method: "GET",
             redirect: "follow"
-          };
-          
-          fetch("https://localhost:7192/api/v1/Positions", requestOptions)
+        };
+
+        fetch("https://localhost:7192/api/v1/Positions", requestOptions)
             .then((response) => response.json())
             .then((result) => {
                 let Positions = document.getElementById("employeePosition");
@@ -197,19 +195,19 @@ function getPositios(){
                 Positions.innerHTML = options;
             })
             .catch((error) => console.error(error));
-    }catch(error){
+    } catch (error) {
         console.error(error);
     }
 }
 
-function getDepartments(){
-    try{
+function getDepartments() {
+    try {
         const requestOptions = {
             method: "GET",
             redirect: "follow"
-          };
-          
-          fetch("https://localhost:7192/api/v1/Departments", requestOptions)
+        };
+
+        fetch("https://localhost:7192/api/v1/Departments", requestOptions)
             .then((response) => response.json())
             .then((result) => {
                 let departments = document.getElementById("employeeDepartment");
@@ -221,7 +219,7 @@ function getDepartments(){
                 departments.innerHTML = options;
             })
             .catch((error) => console.error(error));
-    }catch(error){
+    } catch (error) {
         console.error(error);
     }
 }
@@ -245,7 +243,6 @@ function deleteEmployee(employeeCode) {
     fetch(`https://localhost:7192/api/v1/Employees/${currentDeleteId}`, requestOptions)
         .then((response) => response.json())
         .then((result) => {
-            debugger;
             if (result.success) {
                 alert("Xóa thành công!")
                 fetchEmployees();
@@ -301,7 +298,7 @@ function resetForm() {
         genderChecked.checked = false;
     }
 
-    document.getElementById("employeeId").value = "";
+    document.getElementById("identityNumber").value = "";
     document.getElementById("employeeIdDate").value = "";
     document.getElementById("employeeIssued").value = "";
     document.getElementById("employeeAddress").value = "";
@@ -364,6 +361,61 @@ document.querySelector('.search-input').addEventListener('input', searchEmployee
 document.querySelector('#btn_add').addEventListener('click', function () {
     currentEditId = "0";
     loadOpenEmployee();
+});
+
+document.getElementById("employeeForm").addEventListener('submit', function (event) {
+    event.preventDefault();
+})
+
+document.getElementById("button-add-emp").addEventListener('click', function () {
+    try {
+        let form = document.getElementById("employeeForm");
+        if (form.checkValidity()) {
+            const form = document.getElementById("employeeForm");
+            const formData = {};
+
+            for (let element of form.elements) {
+                if (element.name) {
+                    if (element.type === 'radio') {
+                        if (element.checked) {
+                            formData[element.name] = element.value;
+                        }
+                    } else {
+                        formData[element.name] = element.value || null;
+                    }
+                }
+            }
+
+            const myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+
+            const raw = JSON.stringify(formData);
+
+            const requestOptions = {
+                method: "POST",
+                headers: myHeaders,
+                body: raw,
+                redirect: "follow"
+            };
+
+            fetch("https://localhost:7192/api/v1/Employees", requestOptions)
+                .then((response) => response.json())
+                .then((result) => {
+                    if(result.success){
+                        alert("Thêm mới thành công!")
+                        fetchEmployees();
+                        closeModal();
+                    } else{
+                        debugger;
+                        alert("Lỗi thêm mới!" + result.errors[0]);
+                    }
+                })
+                .catch((error) => console.error(error));
+            console.log(formData);
+        }
+    } catch (error) {
+        console.error(error);
+    }
 });
 
 // Khởi tạo bảng
