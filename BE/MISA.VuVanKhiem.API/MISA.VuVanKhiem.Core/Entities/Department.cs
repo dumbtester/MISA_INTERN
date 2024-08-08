@@ -8,7 +8,7 @@ namespace MISA.VuVanKhiem.Core.Entities
 {
     public class Department
     {
-        public string PositionId { get; set; }
-        public string PositionName { get; set; }
+        public Guid DepartmentId { get; set; }
+        public string DepartmentName { get; set; }
     }
 }

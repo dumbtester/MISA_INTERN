@@ -1,4 +1,5 @@
-﻿using MISA.VuVanKhiem.Core.Entities;
+﻿using MISA.VuVanKhiem.Core.DTOs;
+using MISA.VuVanKhiem.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,8 @@ namespace MISA.VuVanKhiem.Core.Interfaces
 {
     public interface IBaseService<T> where T : class 
     {
-        object InsertService(T entity);
+        MessageResponse InsertService(T entity);
+        MessageResponse UpdateService(T entity);
 
     }
 }

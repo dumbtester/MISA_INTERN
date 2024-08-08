@@ -9,6 +9,8 @@ namespace MISA.VuVanKhiem.Core.Interfaces
 {
     public interface IEmployeeRepository : IBaseRepository<Employee>
     {
+        string GetNewEmployeeCode();
+        bool CheckCodeDuplicate(String EmloyeeCode);
     }
 }
 

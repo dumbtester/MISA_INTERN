@@ -1,17 +1,14 @@
 /* Slide Bar styles */
 .slide-bar {
-    width: 56px;
     transition: width 0.3s;
     background-color: #140033;
     color: white;
     height: 100%;
     overflow: hidden;
     position: relative;
-}
-
-.slide-bar.expanded {
     width: 200px;
 }
+
 
 .router-link {
     display: flex;

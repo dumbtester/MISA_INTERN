@@ -10,11 +10,11 @@ namespace MISA.VuVanKhiem.Core.Interfaces
     public interface IBaseRepository<T> where T : class
     {
         List<T> Get();
-        T Get(Guid id);
-        int Insert(T employee);
-        int Update(T employee);
-        int Delete(T employee);
-        int DeleteAll();
+        T? Get(String id);
+        int Insert(T entity);
+        int Update(T entity);
+        int Delete(string id);
+        int DeleteAny(Guid[] ids);
     }
 }
 

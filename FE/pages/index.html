@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản Lý Nhân Viên</title>
     <link rel="stylesheet" href="/css/main.css">
-</head> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+</head>
+
 <body>
     <div class="container">
         <!-- Slide Bar -->
-        <div class="slide-bar" id="slideBar">
+        <div class="slide-bar expanded" id="slideBar">
             <div class="content">
                 <a href="/" class="router-link" id="homeLink">
                     <img src="/assets/icon/dashboard.png" alt="Dashboard" class="router-icon">
@@ -31,7 +35,7 @@
                     <span>Cài đặt</span>
                 </a>
             </div>
-        
+
         </div>
 
         <div class="main-content">
@@ -59,30 +63,41 @@
             <!-- Quản Lý Nhân Viên -->
             <div class="top_container">
                 <div class="title">Quản Lý Nhân Viên</div>
-                <button class="btn_add" onclick="openModal()">
+                <button class="btn_add" id="btn_add" onclick="openModal()">
                     <img src="/assets/icon/add.png" alt="Thêm mới" class="icon"> Thêm mới
                 </button>
             </div>
-            
+
 
             <div class="body_container">
                 <div class="tool_bar">
                     <div class="quick_filter">
-                        <input type="text" class="search-input" placeholder="Tìm kiếm theo mã, họ tên" id="searchKeyword">
+                        <input type="text" class="search-input" placeholder="Tìm kiếm theo mã, họ tên"
+                            id="searchKeyword">
                         <div class="search-icon" onclick="search()"></div>
                     </div>
                     <div class="action">
-                        <button class="action-btn">
+                        <button class="action-btn" id="exportBtn" onclick="exportTableToExcel('employeeTable')">
                             <img class="icon" src="/assets/icon/export-excel-50.png" alt="Export Excel">
                         </button>
-                        <button class="action-btn">
+                        <button class="action-btn" id="refreshBtn">
                             <img class="icon" src="/assets/icon/refresh.png" alt="Refresh">
                         </button>
                     </div>
+
                 </div>
 
                 <div class="employee-table">
-                    <table>
+                    <table id="tblEmployee">
+                        <colgroup>
+                            <col style="width: 5%;">
+                            <col style="width: 12%;">
+                            <col style="width: 15%;">
+                            <col style="width: 7%;">
+                            <col style="width: 10%;">
+                            <col style="width: 18%;">
+                            <col style="width: 30%;">
+                        </colgroup>
                         <thead>
                             <tr>
                                 <th>STT</th>
@@ -91,27 +106,35 @@
                                 <th>Giới tính</th>
                                 <th>Ngày sinh</th>
                                 <th>Địa chỉ email</th>
-                                <th>Địa chỉ</th>
+                                <th>
+                                    Địa chỉ
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="employeeTableBody">
                             <!-- Rows will be added dynamically by JavaScript -->
                         </tbody>
+
                     </table>
+
                 </div>
             </div>
 
             <!-- Phân Trang -->
             <div class="pagination">
-                <span>Số bản ghi/trang</span>
-                <select id="recordsPerPage" onchange="changeRowsPerPage()">
-                    <option value="5">5</option>
-                    <option value="10" selected>10</option>
-                    <option value="15">15</option>
+                <span style="margin-left: auto;">Số bản ghi/trang</span>
+                <select id="recordsPerPage" onchange="handleSelectOption()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                 </select>
-                <div class="pagination-buttons">
-                    <button onclick="prevPage()" id="prevBtn">&lt;</button>
-                    <button onclick="nextPage()" id="nextBtn">&gt;</button>
+                <!-- <div class="pagination-buttons"> -->
+                <button onclick="prevPage()" id="prevBtn">&lt;</button>
+                <button onclick="nextPage()" id="nextBtn">&gt;</button>
+                <!-- </div> -->
+
+                <div class="total-records">
+                    Tổng số bản ghi: <span id="totalRecords">0</span>
                 </div>
             </div>
             <!-- Modal thêm nhân viên -->
@@ -125,20 +148,29 @@
                                     <div class="code_name">
                                         <div class="code">
                                             <label for="employeeCode">Mã nhân viên</label>
-                                            <input id="employeeCode" name="code" type="text">
+                                            <input id="employeeCode" name="employeeCode" type="text" required>
                                         </div>
                                         <div class="name">
                                             <label for="employeeName">Họ và tên</label>
-                                            <input id="employeeName" name="name" type="text">
+                                            <input id="employeeName" name="fullName" type="text" required>
                                         </div>
                                     </div>
                                     <div class="position">
                                         <label for="employeePosition">Vị trí</label>
-                                        <input id="employeePosition" name="position" type="text">
+                                        <!-- <input id="employeePosition" name="position" type="text"> -->
+                                        <select id="employeePosition" name="positionId">
+                                            <option value="">Nhân viên</option>
+                                            <option value="">Nhân viên</option>
+                                            <option value="">Nhân viên</option>
+                                        </select>
                                     </div>
                                     <div class="department">
                                         <label for="employeeDepartment">Phòng ban</label>
-                                        <input id="employeeDepartment" name="department" type="text">
+                                        <select id="employeeDepartment" name="departmentId">
+                                            <option value="">Nhân viên</option>
+                                            <option value="">Nhân viên</option>
+                                            <option value="">Nhân viên</option>
+                                        </select>
                                     </div>
                                 </div>
 
@@ -146,7 +178,7 @@
                                     <div class="dob_gender">
                                         <div class="dob">
                                             <label for="employeeDob">Ngày sinh</label>
-                                            <input id="employeeDob" name="dob" type="date">
+                                            <input id="employeeDob" name="dateOfBirth" type="date">
                                         </div>
                                         <div class="gender">
                                             <label>Giới tính</label>
@@ -165,16 +197,16 @@
                                     <div class="id_date">
                                         <div class="id">
                                             <label for="employeeId">Số CMND</label>
-                                            <input id="employeeId" name="id" type="text">
+                                            <input id="employeeId" name="identityNumber" type="text">
                                         </div>
                                         <div class="date">
                                             <label for="employeeIdDate">Ngày cấp</label>
-                                            <input id="employeeIdDate" name="idDate" type="date">
+                                            <input id="employeeIdDate" name="identityDate" type="date">
                                         </div>
                                     </div>
                                     <div class="issued">
                                         <label for="employeeIssued">Nơi cấp</label>
-                                        <input id="employeeIssued" name="issued" type="text">
+                                        <input id="employeeIssued" name="identityPlace" type="text">
                                     </div>
                                 </div>
                             </div>
@@ -189,11 +221,11 @@
                             <div class="row_3">
                                 <div class="phone">
                                     <label for="employeePhone">ĐT Di động</label>
-                                    <input id="employeePhone" name="phone" type="text">
+                                    <input id="employeePhone" name="phoneNumber" type="text">
                                 </div>
                                 <div class="tel">
                                     <label for="employeeTel">ĐT Cố định</label>
-                                    <input id="employeeTel" name="tel" type="text">
+                                    <input id="employeeTel" name="landlineNumber" type="text">
                                 </div>
                                 <div class="email">
                                     <label for="employeeEmail">Email</label>
@@ -204,28 +236,45 @@
                             <div class="row_4">
                                 <div class="bank_account_number">
                                     <label for="employeeBankAccountNumber">Số tài khoản ngân hàng</label>
-                                    <input id="employeeBankAccountNumber" name="bankAccountNumber" type="text">
-                                <div class="bank_account_name">
-                                    <label for="employeeBankAccountName">Tên tài khoản</label>
-                                    <input id="employeeBankAccountName" name="bankAccountName" type="text">
-                                </div>
-                                <div class="branch">
-                                    <label for="employeeBranch">Chi nhánh</label>
-                                    <input id="employeeBranch" name="branch" type="text">
+                                    <input id="employeeBankAccountNumber" name="bankAccount" type="text">
+                                    <div class="bank_account_name">
+                                        <label for="employeeBankAccountName">Tên tài khoản</label>
+                                        <input id="employeeBankAccountName" name="bankName" type="text">
+                                    </div>
+                                    <div class="branch">
+                                        <label for="employeeBranch">Chi nhánh</label>
+                                        <input id="employeeBranch" name="branch" type="text">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="buttons">
-                            <button type="button" onclick="closeModal()">Hủy</button>
-                            <button type="submit">Thêm mới</button>
-                        </div>
+                            <div class="buttons">
+                                <button type="button" onclick="closeModal()">Hủy</button>
+                                <button type="submit">Thêm mới</button>
+                            </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Notification Title</h2>
+                <button class="close-btn">
+                    <img src="../assets/icon/close-48.png" alt="Close">
+                </button>
+            </div>
+            <div class="popup-body">
+                <p>Are you sure you want to delete this item?</p>
+            </div>
+            <div class="popup-footer">
+                <button class="close-popup-btn">Xác nhận</button>
+            </div>
+        </div>
+    </div>
 
-    <script src="/js/script.js"></script>
-    
+
 </body>
+<script src="/js/script.js"></script>
+
 </html>

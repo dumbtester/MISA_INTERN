@@ -1,0 +1,99 @@
+.btn_add {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #50B83C;
+    color: white;
+}
+
+.btn_add:hover{
+    background-color: rgb(54, 143, 36);
+}
+
+.action {
+    display: flex;
+
+}
+
+.action-btn {
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    width: 40px;
+    height: 36px;
+    opacity: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng nhẹ */
+    transition: background-color 0.3s;
+    padding: 0;
+}
+
+.action-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/************************/
+tbody tr td div {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* Thay đổi vị trí nút */
+    transform: translateY(-50%);
+    flex-direction: row;
+    /* Đảm bảo các nút được xếp hàng ngang */
+    gap: 10px;
+    /* Khoảng cách giữa các nút */
+}
+
+tbody tr:hover td div {
+    display: flex;
+}
+
+tbody tr:hover {
+    background-color: #F2FFF0;
+}
+
+tbody tr td div button {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    /* Nền trong suốt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+tbody tr td div button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Màu nền khi hover */
+}
+
+tbody tr td div button img {
+    width: 16px;
+    height: 16px;
+}
