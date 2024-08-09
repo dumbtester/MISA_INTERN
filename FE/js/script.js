@@ -1,3 +1,4 @@
+// Biến toàn cục
 let currentPage = 1;
 let rowsPerPage = 10;
 let employees = [];
@@ -5,17 +6,9 @@ let currentDeleteId;
 let currentEditId;
 let totalPages;
 
-// Hàm để tính toán số trang
-function calculateTotalPages() {
-    totalPages = Math.ceil(employees.length / rowsPerPage);
-    // Giới hạn hiển thị tối đa 3 trang
-    if (totalPages > 3) {
-        totalPages = 3;
-    }
-}
-
-
-// Hàm để cập nhật nút phân trang
+/**
+ * Cập nhật trạng thái của các nút phân trang
+ */
 function updatePaginationButtons() {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
@@ -24,32 +17,35 @@ function updatePaginationButtons() {
     nextBtn.disabled = currentPage === totalPages;
 }
 
-// Hàm để xử lý khi chọn giá trị từ select option
+/**
+ * Xử lý sự kiện khi người dùng chọn số bản ghi hiển thị trên một trang
+ */
 function handleSelectOption() {
     const selectOption = document.getElementById('recordsPerPage');
     const selectedValue = parseInt(selectOption.value);
 
-    if (selectedValue === 1) {
-        currentPage = 1;
-    } else if (selectedValue === 2) {
-        currentPage = 2;
-    } else if (selectedValue === 3) {
-        currentPage = 3;
-    }
+    currentPage = selectedValue;
 
     renderTable();
 }
 
-// Xử lý Modal
+/**
+ * Hiển thị modal
+ */
 function openModal() {
     document.getElementById("employeeModal").style.display = "flex";
 }
 
+/**
+ * Đóng modal
+ */
 function closeModal() {
     document.getElementById("employeeModal").style.display = "none";
 }
 
-// Hàm để hiển thị bảng nhân viên
+/**
+ * Hiển thị bảng nhân viên
+ */
 function renderTable() {
     const tableBody = document.querySelector("#employeeTableBody");
     tableBody.innerHTML = '';
@@ -82,27 +78,31 @@ function renderTable() {
     addEditButtonEvents();
 }
 
-
-
-// Hàm để chuyển đến trang trước
+/**
+ * Chuyển đến trang trước
+ */
 function prevPage() {
     if (currentPage > 1) {
         currentPage--;
         renderTable();
+        document.getElementById("recordsPerPage").value = currentPage;
     }
 }
 
-// Hàm để chuyển đến trang sau
+/**
+ * Chuyển đến trang tiếp theo
+ */
 function nextPage() {
     if (currentPage < Math.ceil(employees.length / rowsPerPage)) {
         currentPage++;
         renderTable();
+        document.getElementById("recordsPerPage").value = currentPage;
     }
 }
 
-
-
-// Hàm để lấy dữ liệu nhân viên từ API
+/**
+ * Lấy dữ liệu nhân viên từ API
+ */
 function fetchEmployees() {
     try {
         fetch(`https://localhost:7192/api/v1/Employees`)
@@ -110,7 +110,8 @@ function fetchEmployees() {
             .then((data) => {
                 employees = data;
                 document.getElementById("totalRecords").innerText = employees.length;
-                totalPages = employees.length % 10 == 0 ? employees.length / 10 : employees.length / 10 + 1;
+                totalPages = employees.length % rowsPerPage == 0 ? employees.length / rowsPerPage : Math.floor(employees.length / rowsPerPage) + 1;
+                renderOptions();
                 renderTable();
             });
     } catch (error) {
@@ -118,16 +119,34 @@ function fetchEmployees() {
     }
 }
 
+/**
+ * Hiển thị các tùy chọn số trang
+ */
+function renderOptions() {
+    let select = document.getElementById("recordsPerPage");
+    let options = ``;
+    for (let i = 1; i <= totalPages; i++) {
+        options += `<option value="${i}">${i}</option>`;
+    }
+    select.innerHTML = options;
+}
+
+/**
+ * Thêm sự kiện cho các nút chỉnh sửa
+ */
 function addEditButtonEvents() {
-    let buttons = document.querySelectorAll(".utton-edit");
+    let buttons = document.querySelectorAll(".button-edit");
     for (const button of buttons) {
         button.addEventListener('click', function (event) {
             currentEditId = button.getAttribute('data-id');
+            loadOpenEmployee();
         });
     }
 }
 
-// Hàm để thêm sự kiện cho các nút xóa
+/**
+ * Thêm sự kiện cho các nút xóa
+ */
 function addDeleteButtonEvents() {
     let buttons = document.querySelectorAll(".button-delete");
     for (const button of buttons) {
@@ -150,10 +169,12 @@ function addDeleteButtonEvents() {
     }
 }
 
+/**
+ * Tải thông tin nhân viên để chỉnh sửa hoặc tạo mới
+ */
 function loadOpenEmployee() {
     try {
         resetForm();
-        console.log("oaiwjfoiwjgoijrg")
         if (currentEditId === "0") {
             const requestOptions = {
                 method: "GET",
@@ -165,17 +186,56 @@ function loadOpenEmployee() {
                 .then((result) => {
                     openModal();
                     document.getElementById("employeeCode").value = result;
-
                 })
                 .catch((error) => console.error(error));
         } else {
+            const requestOptions = {
+                method: "GET",
+                redirect: "follow"
+            };
 
+            fetch(`https://localhost:7192/api/v1/Employees/${currentEditId}`, requestOptions)
+                .then((response) => response.json())
+                .then((result) => {
+                    drawData(result);
+                    openModal();
+                })
+                .catch((error) => console.error(error));
         }
     } catch (error) {
         console.error(error);
     }
 }
 
+/**
+ * Hiển thị dữ liệu nhân viên lên form
+ * @param {Object} employee - Đối tượng chứa thông tin nhân viên
+ */
+function drawData(employee) {
+    document.getElementById('employeeCode').value = employee.employeeCode;
+    document.getElementById('employeeName').value = employee.fullName;
+
+    document.getElementById('employeeDob').value = employee.dateOfBirth?.split('T')[0] ?? null;
+    document.getElementById('genderMale').checked = employee.gender === 0;
+    document.getElementById('genderFemale').checked = employee.gender === 1;
+    document.getElementById('genderOther').checked = employee.gender === 2;
+
+    document.getElementById('identityNumber').value = employee.identityNumber ?? "";
+    document.getElementById('employeeIdDate').value = employee.identityDate?.split('T')[0] ?? null;
+    document.getElementById('employeeIssued').value = employee.identityPlace ?? "";
+    document.getElementById('employeeAddress').value = employee.address ?? "";
+    document.getElementById('employeePhone').value = employee.phoneNumber ?? "";
+    document.getElementById('employeeTel').value = employee.landlineNumber ?? "";
+    document.getElementById('employeeEmail').value = employee.email ?? "";
+    document.getElementById('employeeBankAccountNumber').value = employee.bankAccount ?? "";
+
+    document.getElementById('employeeBankAccountName').value = employee.bankName;
+    document.getElementById('employeeBranch').value = employee.branch;
+}
+
+/**
+ * Lấy danh sách vị trí công việc từ API
+ */
 function getPositios() {
     try {
         const requestOptions = {
@@ -200,6 +260,9 @@ function getPositios() {
     }
 }
 
+/**
+ * Lấy danh sách phòng ban từ API
+ */
 function getDepartments() {
     try {
         const requestOptions = {
@@ -224,7 +287,10 @@ function getDepartments() {
     }
 }
 
-// Hàm để xóa một nhân viên
+/**
+ * Xóa một nhân viên
+ * @param {string} employeeCode - Mã nhân viên cần xóa
+ */
 function deleteEmployee(employeeCode) {
     console.log('Deleting employee with code:', employeeCode);
 
@@ -251,14 +317,15 @@ function deleteEmployee(employeeCode) {
         .catch((error) => console.error(error));
 }
 
-
-// Thông báo cho popup xóa
+// Thêm sự kiện đóng popup xóa
 document.querySelector('.close-btn').addEventListener('click', () => {
     document.getElementById('popup').style.display = 'none';
     document.querySelector('.close-popup-btn').onclick = null;
 });
 
-// Hàm để làm mới bảng nhân viên
+/**
+ * Làm mới bảng nhân viên
+ */
 function refreshTable() {
     currentPage = 1;
     employees = [];
@@ -266,10 +333,12 @@ function refreshTable() {
     fetchEmployees();
 }
 
-// Sự kiện cho nút làm mới
+// Thêm sự kiện cho nút làm mới
 document.getElementById("refreshBtn").addEventListener("click", refreshTable);
 
-// Hàm tìm kiếm nhân viên
+/**
+ * Tìm kiếm nhân viên
+ */
 function searchEmployees() {
     const searchInput = document.querySelector('.search-input').value.toLowerCase();
     const rows = document.querySelectorAll("#employeeTableBody tr");
@@ -286,7 +355,9 @@ function searchEmployees() {
     updateTotalRecords();
 }
 
-// hàm gọi đến insert hoặc update
+/**
+ * Đặt lại form về trạng thái ban đầu
+ */
 function resetForm() {
     document.getElementById("employeeCode").value = "";
     document.getElementById("employeeName").value = "";
@@ -310,7 +381,10 @@ function resetForm() {
     document.getElementById("employeeBranch").value = "";
 }
 
-// Hàm xuất bảng ra CSV
+/**
+ * Xuất bảng ra file CSV
+ * @param {string} filename - Tên file CSV
+ */
 function exportTableToCSV(filename) {
     let csv = [];
     let headers = ["STT", "EmployeeCode", "FullName", "Gender", "DateOfBirth", "Email", "Address"];
@@ -344,47 +418,64 @@ function exportTableToCSV(filename) {
     downloadLink.click();
 }
 
-// Thêm sự kiện cho nút xuất CSV
-document.getElementById("exportBtn").addEventListener("click", function () {
-    exportTableToCSV('employees.csv');
-});
-
-// Hàm để cập nhật số bản ghi hiển thị
+/**
+ * Cập nhật số bản ghi hiển thị
+ */
 function updateTotalRecords() {
     const visibleRows = document.querySelectorAll("#employeeTableBody tr:not([style*='display: none'])").length;
     document.getElementById("totalRecords").innerText = visibleRows;
 }
 
+/**
+ * Lấy dữ liệu từ form
+ * @returns {Object} Dữ liệu từ form
+ */
+function getDateFromForm() {
+    let form = document.getElementById("employeeForm");
+    const formData = {};
+
+    for (let element of form.elements) {
+        if (element.name) {
+            if (element.type === 'radio') {
+                if (element.checked) {
+                    formData[element.name] = element.value;
+                }
+            } else {
+                formData[element.name] = element.value || null;
+            }
+        }
+    }
+    if (currentEditId !== "0") {
+        formData["employeeId"] = currentEditId;
+    }
+    return formData;
+}
+
+// Thêm sự kiện cho nút xuất CSV
+document.getElementById("exportBtn").addEventListener("click", function () {
+    exportTableToCSV('employees.csv');
+});
+
 // Thêm sự kiện cho ô tìm kiếm
 document.querySelector('.search-input').addEventListener('input', searchEmployees);
 
+// Thêm sự kiện cho nút thêm nhân viên mới
 document.querySelector('#btn_add').addEventListener('click', function () {
     currentEditId = "0";
     loadOpenEmployee();
 });
 
+// Ngăn chặn hành vi mặc định của form submit
 document.getElementById("employeeForm").addEventListener('submit', function (event) {
     event.preventDefault();
 })
 
+// Xử lý sự kiện khi nhấn nút thêm/cập nhật nhân viên
 document.getElementById("button-add-emp").addEventListener('click', function () {
     try {
         let form = document.getElementById("employeeForm");
         if (form.checkValidity()) {
-            const form = document.getElementById("employeeForm");
-            const formData = {};
-
-            for (let element of form.elements) {
-                if (element.name) {
-                    if (element.type === 'radio') {
-                        if (element.checked) {
-                            formData[element.name] = element.value;
-                        }
-                    } else {
-                        formData[element.name] = element.value || null;
-                    }
-                }
-            }
+            const formData = getDateFromForm();
 
             const myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
@@ -397,28 +488,44 @@ document.getElementById("button-add-emp").addEventListener('click', function () 
                 body: raw,
                 redirect: "follow"
             };
-
-            fetch("https://localhost:7192/api/v1/Employees", requestOptions)
-                .then((response) => response.json())
-                .then((result) => {
-                    if(result.success){
-                        alert("Thêm mới thành công!")
-                        fetchEmployees();
-                        closeModal();
-                    } else{
-                        debugger;
-                        alert("Lỗi thêm mới!" + result.errors[0]);
-                    }
-                })
-                .catch((error) => console.error(error));
             console.log(formData);
+
+            if (currentEditId === "0") {
+                // Thêm mới nhân viên
+                fetch("https://localhost:7192/api/v1/Employees", requestOptions)
+                    .then((response) => response.json())
+                    .then((result) => {
+                        if (result.success) {
+                            alert("Thêm mới thành công!")
+                            fetchEmployees();
+                            closeModal();
+                        } else {
+                            alert("Lỗi thêm mới!" + result.errors[0]);
+                        }
+                    })
+                    .catch((error) => console.error(error));
+            } else {
+                // Cập nhật thông tin nhân viên
+                fetch("https://localhost:7192/api/v1/Employees/Update", requestOptions)
+                    .then((response) => response.json())
+                    .then((result) => {
+                        if (result.success) {
+                            alert("Cập nhật thành công!")
+                            fetchEmployees();
+                            closeModal();
+                        } else {
+                            alert("Lỗi cập nhật!" + result.errors[0]);
+                        }
+                    })
+                    .catch((error) => console.error(error));
+            }
         }
     } catch (error) {
         console.error(error);
     }
 });
 
-// Khởi tạo bảng
+// Khởi tạo ứng dụng
 fetchEmployees();
 getPositios();
 getDepartments();
