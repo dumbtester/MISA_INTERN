@@ -1,6 +1,6 @@
-/* General Styles for Popup */
+/* Styles chung cho popup */
 .popup {
-    display: none; /* Hidden by default */
+    display: none; /* Ẩn mặc định */
     position: fixed;
     top: 0;
     left: 0;
@@ -12,13 +12,21 @@
     z-index: 1000;
 }
 
-select{
+/* Style cho các phần tử select */
+.container_form .position select {
     height: 33.6px;
     border-radius: 4px;
-    margin-bottom: 13px;
     margin-right: 8px;
 }
 
+/* Style cho các phần tử select */
+.container_form .department select {
+    height: 33.6px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+/* Nội dung của popup */
 .popup-content {
     background-color: #fff;
     position: absolute;
@@ -33,6 +41,7 @@ select{
     text-align: center;
 }
 
+/* Phần header của popup */
 .popup-header {
     display: flex;
     justify-content: space-between;
@@ -48,13 +57,13 @@ select{
     margin: 0;
 }
 
+/* Nút đóng popup */
 .close-btn {
     width: auto;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
-    
 }
 
 .close-btn img {
@@ -69,6 +78,7 @@ select{
     transform: scale(1.1);
 }
 
+/* Phần body của popup */
 .popup-body p {
     margin: 20px 0;
     color: #555;
@@ -76,12 +86,14 @@ select{
     line-height: 1.5;
 }
 
+/* Phần footer của popup */
 .popup-footer {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
 }
 
+/* Styles cho các nút trong popup */
 .close-popup-btn, .confirm-popup-btn {
     background-color: #089740;
     color: white;

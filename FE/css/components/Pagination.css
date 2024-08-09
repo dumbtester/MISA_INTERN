@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     padding: 0 24px;
 }
 
@@ -18,7 +17,6 @@
 
 .pagination-buttons {
     display: flex;
-    /* Thêm dòng này */
 }
 
 .pagination button {
@@ -43,16 +41,13 @@
     opacity: 0.5;
 }
 
-#prevBtn:hover,
-#nextBtn:hover {
-    scale: 1.1;
-    background-color: #ccc;
-}
-
-#prevBtn,
-#nextBtn {
+#prevBtn, #nextBtn {
     margin-top: 0;
     margin-left: 4px;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background-color: #ccc;
 }
 
 .total-records {

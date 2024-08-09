@@ -1,4 +1,4 @@
-/* Slide Bar styles */
+/* Styles cho thanh trượt */
 .slide-bar {
     transition: width 0.3s;
     background-color: #140033;
@@ -9,7 +9,7 @@
     width: 200px;
 }
 
-
+/* Styles cho các liên kết trong thanh trượt */
 .router-link {
     display: flex;
     align-items: center;
@@ -18,28 +18,28 @@
     margin-bottom: 10px;
     padding: 10px;
     transition: background-color 0.3s;
-    font-weight: 600px;
+    font-weight: 600;
 }
 
+/* Chỉnh màu icon trong liên kết */
 .router-link img {
     margin-right: 5px;
     filter: brightness(0) invert(1);
 }
 
-.router-link span {
-    transition: color 0.3s;
-}
-
+/* Hiệu ứng khi di chuột qua liên kết */
 .router-link:hover {
     background-color: #5a79a0;
     border-radius: 5px;
 }
 
+/* Style cho liên kết đang active */
 .active-link {
     background-color: #5a79a0;
     border-radius: 5px;
 }
 
+/* Nút toggle ở dưới cùng của thanh trượt */
 .toggle-button {
     width: 100%;
     height: 40px;
@@ -51,6 +51,7 @@
     bottom: 0;
 }
 
+/* Khu vực nội dung chính */
 .content {
     margin: 20px;
     flex-grow: 1;
